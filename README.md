@@ -1,6 +1,7 @@
 # musicaption
 
 I hate subtitling my music videos on TikTok, Reels, and YouTube. This allows me and others to auto-caption their music videos
+using the original video plus an audio recording of their voice speaking the words of the song
 
 # Thoughts
 

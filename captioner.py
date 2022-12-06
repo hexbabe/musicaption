@@ -1,9 +1,9 @@
 from moviepy.editor import *
 from moviepy.video.tools.subtitles import SubtitlesClip
 
-def caption_video(video_path, subs):
+def caption_video(video_path, subtitle_data):
     generator = lambda txt: TextClip(txt, font='Georgia-Bold', fontsize=50, color='white')
-    subtitles = SubtitlesClip(subs, generator)
+    subtitles = SubtitlesClip(subtitle_data, generator)
 
     video = VideoFileClip(video_path)
     result = CompositeVideoClip([video, subtitles.set_pos(('center'))])
