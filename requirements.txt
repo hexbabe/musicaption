@@ -1,0 +1,4 @@
+ez-setup===0.9  
+moviepy===1.0.3
+vosk===0.3.38
+pydub===0.25.1
