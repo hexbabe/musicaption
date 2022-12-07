@@ -11,7 +11,7 @@ Vosk generates a JSON "transcript" containing objects with the words and their t
 
 Fortunately, subtitles use text + time bounds— go figure. Pass those into MoviePY and voila
 
-If you want to run this:
+If you want to run this WIP MVP:
 1. Set up your Python venv and install the requirements
 2. Install/make sure FFMPEG is installed on your system
 3. Download the vosk-model-en-us-0.22 language model from the Vosk website and unzip the folder in the outermost repo directory
