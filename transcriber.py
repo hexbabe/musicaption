@@ -39,7 +39,14 @@ def transcribe_to_subs(wav_path):
             subs.append(sub)  # and add it to list
 
     wav.close()
+    with open('./subs.json', 'w') as f:
+        json.dump(subs, f)
     return subs
 
 if __name__ == '__main__':
-    print(transcribe_to_subs('inputs/audios/test.wav'))
+    use_existing = input('Use existing subs.json file (y/n)? ')
+    if use_existing == 'n':
+        audio_file_name = input('Audio file name (exclude ext): ')
+        transcribe_to_subs(f'inputs/audios/{audio_file_name}.wav')
+    else:
+        print('Using current subs.json')

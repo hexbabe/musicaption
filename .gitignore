@@ -2,3 +2,6 @@ env
 vosk-model-en-us-0.22
 .DS_Store
 __pycache__
+inputs
+outputs
+subs.json
